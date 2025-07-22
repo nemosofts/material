@@ -12,7 +12,7 @@ android {
         minSdk 23
         targetSdk 36
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -52,7 +52,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.nemosofts'
             artifactId = 'material'
-            version = "1.0.1"
+            version = "1.0.2"
             pom {
                 description = 'Nemosofts UI Library'
             }
