@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Nemosofts UI v1.0.2"
+rootProject.name = "Material v1.0.3"
 include ':app'
