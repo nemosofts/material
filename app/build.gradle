@@ -12,7 +12,7 @@ android {
         minSdk 23
         targetSdk 36
         versionCode 1
-        versionName "1.0.4"
+        versionName "1.0.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -23,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -34,6 +35,12 @@ android {
 
     lint {
         disable 'OldTargetApi', 'GradleDependency', 'GradleDynamicVersion'
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = false
+        }
     }
 }
 
@@ -52,7 +59,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.nemosofts'
             artifactId = 'material'
-            version = "1.0.3"
+            version = "1.0.5"
             pom {
                 description = 'Nemosofts Material Library'
             }
