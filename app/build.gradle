@@ -5,14 +5,16 @@ plugins {
 
 android {
     namespace 'com.nemosofts'
-    compileSdk 36
+    compileSdk {
+        version = release(36)
+    }
 
     defaultConfig {
         applicationId "com.nemosofts"
         minSdk 23
         targetSdk 36
-        versionCode 1
-        versionName "1.0.5"
+        versionCode 2
+        versionName "2.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,12 +38,6 @@ android {
     lint {
         disable 'OldTargetApi', 'GradleDependency', 'GradleDynamicVersion'
     }
-
-    packaging {
-        jniLibs {
-            useLegacyPackaging = false
-        }
-    }
 }
 
 dependencies {
@@ -59,7 +55,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.nemosofts'
             artifactId = 'material'
-            version = "1.0.5"
+            version = "2.0.0"
             pom {
                 description = 'Nemosofts Material Library'
             }
