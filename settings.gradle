@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Material v2.0.0"
+rootProject.name = "Material v2.0.1"
 include ':app'
